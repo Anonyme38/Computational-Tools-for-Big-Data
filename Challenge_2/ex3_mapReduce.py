@@ -17,7 +17,7 @@ class getReddit(MRJob):
 
         for subreddit_id, comment_id, parent_id in self.sqlite_conn.execute(request):
             self.counter+=1
-            print(self.counter, "/53850000")
+            #print(self.counter, "/53850000")
             if(self.counter > 53850000):
                 break
             yield subreddit_id, [comment_id, parent_id]
