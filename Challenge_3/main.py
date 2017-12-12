@@ -5,7 +5,7 @@ import math
 import av
 from PIL import Image
 import numpy as np
-from adjusted_rand_index import rand_index
+from rand_index import rand_index
 import pims
 from multiprocessing import Pool, TimeoutError
 from operator import itemgetter
